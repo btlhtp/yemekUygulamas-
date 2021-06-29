@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="4dp">
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtYemekAdi"
+            android:hint="Yemek Adı"
+            android:textColorHint="@color/design_default_color_primary_dark"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="16sp"
+            android:inputType="text"
+            app:met_baseColor="@android:color/holo_blue_light"
+            app:met_primaryColor="@android:color/holo_blue_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtMalzeme"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:hint="Malzemeler"
+            android:inputType="textMultiLine"
+            android:textColor="@color/design_default_color_primary"
+            android:textColorHint="@color/design_default_color_primary_dark"
+            android:textSize="16sp"
+            app:met_baseColor="@android:color/holo_blue_light"
+            app:met_primaryColor="@android:color/holo_blue_dark" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtYapilis"
+            android:layout_width="match_parent"
+            android:layout_height="106dp"
+            android:hint="Yapılış"
+            android:inputType="textMultiLine"
+            android:textColor="@color/design_default_color_primary"
+            android:textColorHint="@color/design_default_color_primary_dark"
+            android:textSize="16sp"
+            app:met_baseColor="@android:color/holo_blue_light"
+            app:met_primaryColor="@android:color/holo_blue_dark" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtPufNokta"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:hint="Püf Noktası"
+            android:inputType="textMultiLine"
+            android:textColor="@color/design_default_color_primary"
+            android:textColorHint="@color/design_default_color_primary_dark"
+            android:textSize="16sp"
+            app:met_baseColor="@android:color/holo_blue_light"
+            app:met_primaryColor="@android:color/holo_blue_dark" />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtIzlemelinki"
+            android:hint="İzleme Linki"
+            android:textColorHint="@color/design_default_color_primary_dark"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="16sp"
+            android:inputType="text"
+            app:met_baseColor="@android:color/holo_blue_light"
+            app:met_primaryColor="@android:color/holo_blue_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnYemekSec"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:text="RESİM SEÇ"
+                android:textColor="#fff"
+                />
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnYemekYukle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:text="RESİM YÜKLE"
+                android:textColor="#fff"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
